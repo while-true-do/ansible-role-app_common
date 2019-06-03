@@ -1,0 +1,13 @@
+---
+# tasks file for while_true_do.app_common
+
+- name: Manage app_common Packages
+  package:
+    name: "{{ wtd_app_common_package }}"
+    state: "{{ wtd_app_common_package_state }}"
+  become: true
+  tags:
+    - application
+    - common
+    - package
+    - system

@@ -1,0 +1,10 @@
+---
+# defaults file for while_true_do.app_common
+
+## Package Management
+wtd_app_common_package:
+  - vim-enhanced
+  - screen
+  - tree
+# State can be present|latest|absent
+wtd_app_common_package_state: "present"
